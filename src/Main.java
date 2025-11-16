@@ -9,15 +9,26 @@ public class Main {
 //        System.out.printf("Hello and welcome!");
 
         Sandwich sandwich = new Sandwich()
-                .addBreed("sangag")
-                .addSauce("nn")
-                .addLettuce("mmm")
-                .addSausage("kkk")
-                .addTotomato("lll")
-                .addCheese("lll")
-                .addSauce(";;;")
+                .addBreed("baguette")
+                .addSauce("ketchup")
+                .addLettuce("Fresh Leaf")
+                .addSausage("sausage - meat ")
+                .addtomato("tomato")
+                .addCheese("Cheesy ")
                 .build();
+
+        System.out.println("Bread: " + sandwich.getBread());
+        System.out.println("Lettuce: " + sandwich.getLettuce());
+        System.out.println("Sausage: " + sandwich.getSausage());
+        System.out.println("Cheese: " + sandwich.getCheese());
+        System.out.println("Sauce: " + sandwich.getSauce());
+        System.out.println("Tomato: " + sandwich.getTotomato());
+
+        System.out.println("//////////////////////////////////");
         System.out.println(sandwich);
+
+        System.out.println("//////////////////////////////////");
+        sandwich.print();
 
 //        Dog dog = new Dog("bella");
 //        dog.print();
@@ -26,6 +37,6 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }*/
-       IO.println("");
+        IO.println("");
     }
 }

@@ -45,7 +45,7 @@ public class Sandwich {
         this.sauce = sauce;
         return this;
     }
-    public Sandwich addTotomato(String tomato) {
+    public Sandwich addtomato(String tomato) {
         this.tomato = tomato;
         return this;
     }
@@ -96,16 +96,24 @@ public class Sandwich {
         return new Sandwich(bread, lettuce, sausage, tomato, cheese, sauce);
     }
 
-    @Override
-    public String toString() {
-        return "Sandwich{" +
-                "bread='" + bread + '\'' +
-                ", lettuce='" + lettuce + '\'' +
-                ", sausage='" + sausage + '\'' +
-                ", cheese='" + cheese + '\'' +
-                ", sauce='" + sauce + '\'' +
-                ", tomato='" + tomato + '\'' +
-                '}';
+
+    public void print(){
+        System.out.print("Sandwich:" + this.bread + " " +
+                this.sauce + " " +
+                this.lettuce + " "  +
+                this.sausage + " " +
+                this.tomato + " " + this.cheese);
     }
+//    @Override
+//    public String toString() {
+//        return "Sandwich{" +
+//                "bread='" + bread + '\'' +
+//                ", lettuce='" + lettuce + '\'' +
+//                ", sausage='" + sausage + '\'' +
+//                ", cheese='" + cheese + '\'' +
+//                ", sauce='" + sauce + '\'' +
+//                ", tomato='" + tomato + '\'' +
+//                '}';
+//    }
 }
 
